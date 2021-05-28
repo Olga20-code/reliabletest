@@ -46,7 +46,6 @@ gulp.task('libsjs', ['scripts'], function() {
 	return gulp.src([
 			'app/libs/jquery/jquery-1.11.1.min.js',
 			'app/libs/swiper/swiper-bundle.min.js',
-			'app/libs/wow/wow.min.js',
 		])
 		.pipe(babel({
 			presets: ['@babel/env']
@@ -60,7 +59,6 @@ gulp.task('libscss', ['scss'], function(){
 	return gulp.src([
 			// 'app/libs/mosaik/cubeportfolio.min.css',
 			'app/libs/swiper/swiper-bundle.css',
-		'app/libs/animate/animate.min.css',
 		])
 		.pipe(concat('libs.min.css'))
 		.pipe(cssnano())

@@ -62,11 +62,6 @@ $(document).ready(function() {
   let header = $('.main-header'),
       scrollPrev = 0;
 
-  // if(scrolled === 0 && scrolled > scrollTop) {
-  //   header.addClass('main-header');
-  //   header.removeClass('out-menu');
-  // }
-
   $(window).scroll(function() {
     let scrolled = $(window).scrollTop();
 
