@@ -1,0 +1,395 @@
+@import 'default';
+@import 'mixin';
+
+@media screen and (max-width: 1365px) {
+  .swiper-container {
+    max-width: 500px;
+    height: 100%;
+  }
+
+  .head {
+    .flex {
+      margin: 0 50px 0 0;
+    }
+
+    .text {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .center {
+    padding: 0 50px;
+  }
+  .swiper-container {
+    max-width: 100%;
+    width: 50%;
+  }
+  .swiper-arrow {
+    bottom: 3px;
+    right: 0;
+  }
+  .grid {
+    margin: 0;
+  }
+  .grid-big {
+    margin: 0;
+    &>* {
+      margin: 0;
+    }
+  }
+  .head {
+    .flex {
+      &>*{
+        margin: 0;
+      }
+    }
+    .text {
+      margin-left: 66px;
+    }
+  }
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 35px;
+  }
+
+  .link {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .center {
+    padding: 0 15px;
+  }
+  .head {
+    .flex {
+      margin: 0;
+    }
+
+    .text {
+      margin-left: 20px;
+    }
+  }
+  .mobile-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main-header {
+    .menu {
+      display: none;
+      position: absolute;
+      background: #fff;
+      z-index: 3;
+      width: 100%;
+      left: 0;
+      top: 72px;
+      text-align: center;
+      padding: 98px 0;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      a {
+        color: $black;
+        &:hover {
+          color: $violet;
+        }
+      }
+      li {
+        padding: 36px 0;
+      }
+    }
+    .menu-links {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    line-height: 50px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .swiper-arrow {
+    right: 0;
+  }
+  .flex-big {
+    flex-flow: wrap;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    &>* {
+      margin: 10px 0;
+    }
+  }
+  .mt-1 {
+    margin-top: 32px;
+  }
+  .services {
+    .link.flex {
+      justify-content: flex-start;
+      margin: 16px 0 0;
+    }
+    .list {
+      margin-top: 32px;
+    }
+  }
+  .about {
+    .grid-big {
+      grid-template-columns: 1fr;
+    }
+    .flex>* {
+      flex: 0% 1;
+    }
+    .about-text {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .swiper-container {
+    height: 319px;
+  }
+  .swiper-slide {
+    max-height: 319px;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  .swiper-arrow {
+    width: 109px;
+    height: 50px;
+    right: 0;
+    bottom: -1px;
+    &:after {
+      height: 34px;
+    }
+  }
+  .swiper-btn-next,
+  .swiper-btn-prev {
+    background-size: 14px;
+  }
+  .about {
+    .mail-form {
+      .flex {
+        flex-direction: column;
+        div:first-child {
+          margin-bottom: 24px;
+        }
+      }
+      .btn.flex {
+        flex-direction: initial;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    padding: 10px 16px;
+    font-size: 12px;
+    line-height: 14.4px;
+    svg {
+      margin: 0 0 0 6px;
+    }
+  }
+  .about {
+    .flex {
+      flex-direction: column;
+    }
+  }
+  .head {
+    .btn {
+      font-size: 12px;
+      line-height: 14.4px;
+      svg {
+        margin: 0 0 0 6px;
+      }
+    }
+  }
+  .about {
+    .mail-form {
+      padding: 34px 20px 34px 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 421px) {
+  h1 {
+    letter-spacing: 0;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 33px;
+  }
+  h4 {
+    line-height: 22px;
+    letter-spacing: .2px;
+  }
+  h5 {
+    font-size: 10px;
+    padding: 0 27px;
+    &:after {
+      top: 11.7px;
+      width: 20px;
+    }
+  }
+  p {
+    padding: 20px 0;
+    letter-spacing: 0;
+  }
+  .mobile-menu {
+    label {
+      right: -1px;
+      top: 14px;
+    }
+
+    &.active label {
+      div:nth-child(2) {
+        top: 12px;
+        transform: rotate(-45deg);
+        width: 24px;
+        left: 0;
+        border-radius: 20px;
+      }
+      div:nth-child(3) {
+        top: 12px;
+        transform: rotate(45deg);
+        width: 24px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .mt-1 {
+    margin-top: 30px;
+  }
+  .grid>* {
+    margin: 11px 0;
+  }
+  .section {
+    padding: 21px 0;
+  }
+  .swiper-container {
+    margin: 0;
+  }
+  .main-header {
+    padding: 3px 0;
+    margin-bottom: -6px;
+    .logo {
+      .logo-frame {
+        width: 40px;
+      }
+      .logo-name {
+        width: 94px;
+        margin-left: 14px;
+      }
+    }
+    .menu {
+      top: 58px;
+      padding: 98px 0 155px;
+      li {
+        padding: 35px 0;
+      }
+      a {
+        font-size: 25px;
+      }
+    }
+  }
+  .head {
+    .text {
+      margin-top: 17px;
+      margin-left: 15px;
+    }
+    .btn.flex {
+      margin: 30px 0;
+    }
+  }
+  .services {
+    .link {
+      letter-spacing: 0.1px;
+    }
+    .list {
+      margin-top: 21px;
+    }
+    .list-link {
+      bottom: -2px;
+    }
+  }
+  .about {
+    padding: 9.4px 0;
+    h5 {
+      padding: 0 27px;
+    }
+    .grid-big {
+      padding: 0;
+    }
+    .about-text {
+      padding-top: 17px;
+    }
+    .link {
+      margin: 15px 0 0;
+      letter-spacing: 0;
+    }
+    .about-image {
+      max-height: 292px;
+      overflow: hidden;
+    }
+    .mail-form {
+      padding: 20px;
+      p {
+        padding: 6px 0;
+      }
+      .flex {
+        div:first-child {
+          margin-bottom: 0;
+        }
+      }
+      form>* {
+        padding: 12.8px 0 0;
+      }
+      form div:nth-child(2) {
+        padding: 9px 0 0;
+      }
+      .btn.flex {
+        margin: 19px 0 4px;
+      }
+      .btn {
+        padding: 10px 16px;
+        font-size: 12px;
+        line-height: 14.4px;
+        letter-spacing: 1.2px;
+        svg {
+          margin: 0 0 0 6px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  h1 {
+    font-size: 24px;
+  }
+}

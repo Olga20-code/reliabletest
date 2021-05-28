@@ -1,0 +1,21 @@
+$black: #252525;
+$white: #fff;
+$violet: #7637DD;
+$grey: #ABA9AF;
+
+@mixin transition($element: all, $time: .2s, $function: linear) {
+  transition: $element $time $function;
+}
+
+@mixin pos-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin text-center {
+  text-align: center;
+}
